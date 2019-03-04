@@ -25,3 +25,6 @@ Now go to root of samehost
 #ls -l /var/log/sudo-io
 #sudoreplay -l
 #sudoreplay TSID(eg. 000001)
+
+
+https://www.youtube.com/watch?v=8XHlowCiLaM&list=PLLsor6GJ_BEGu4QhY-ASA6b11guiO7XrM
