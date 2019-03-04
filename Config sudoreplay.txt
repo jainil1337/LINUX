@@ -1,0 +1,27 @@
+//config sudoreplay (Need_Root_User)
+----------------------------------------
+$visudo
+
+//insert at last
+
+##Enable SUDO Replay
+Defaults log_output
+Defaults!/usr/bin/sudoreplay !log_output
+Defaults!/sbin/reboot !log_output
+
+jerry ALL=(ALL)     NOPASSWD:ALL
+
+//here jerry is user of same host 
+----------------------------------------
+All Done!!
+----------------------------------------
+For Checking
+1.Now go to jerry(user)    (#sudo -l //check conf)
+2.switch to root 
+3.run any commands
+---------------------------------------
+Now go to root of samehost
+
+#ls -l /var/log/sudo-io
+#sudoreplay -l
+#sudoreplay TSID(eg. 000001)
